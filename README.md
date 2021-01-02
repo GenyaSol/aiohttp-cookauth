@@ -1,1 +1,1 @@
-# aiohttp_redis_auth
+# aiohttp_cookauth
