@@ -8,6 +8,9 @@ from .session import Session, get_session, new_session, setup_session
 from .storage import RedisStorage
 
 
+__version__ = '0.1.0'
+
+
 def setup(app, identity_policy, autz_policy, storage):
     setup_security(app, identity_policy, autz_policy)
     setup_session(app, storage)
