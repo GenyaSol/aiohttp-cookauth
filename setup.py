@@ -16,7 +16,6 @@ def read(f):
 
 
 install_requires = ['aiohttp>=3.2.0']
-tests_require = install_requires + ['pytest']
 extras_require = {
     'aioredis': ['aioredis>=1.0.0'],
 }
@@ -25,7 +24,7 @@ extras_require = {
 setup(name='aiohttp-cookauth',
       version=version,
       description=("authorization via cookies for aiohttp.web"),
-      long_description='\n\n'.join((read('README.rst'))),
+      long_description=read('README.rst'),
       classifiers=[
           'License :: OSI Approved :: Apache Software License',
           'Intended Audience :: Developers',
