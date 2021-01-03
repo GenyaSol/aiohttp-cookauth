@@ -11,9 +11,9 @@ from .storage import RedisStorage
 __version__ = '0.1.0'
 
 
-def setup(app, identity_policy, autz_policy, storage):
-    setup_security(app, identity_policy, autz_policy)
-    setup_session(app, storage)
+def setup(app, autz_policy, redis_pool):
+    setup_security(app, SessionIdentityPolicy(), autz_policy)
+    setup_session(app, redis_pool)
 
 
 __all__ = ('AbstractIdentityPolicy', 'AbstractAuthorizationPolicy',
