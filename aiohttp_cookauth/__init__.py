@@ -8,7 +8,7 @@ from .session import Session, get_session, new_session, setup_session
 from .storage import RedisStorage
 
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def setup(app, autz_policy, redis_pool):
