@@ -144,12 +144,12 @@ async def check_permission(request, permission, context=None):
     raises HTTPForbidden.
     """
 
-    identity = await check_authorized(request)
+    userid = await check_authorized(request)
     allowed = await permits(request, permission, context)
     if not allowed:
         raise web.HTTPForbidden()
 
-    return identity
+    return userid
 
 
 def has_permission(
