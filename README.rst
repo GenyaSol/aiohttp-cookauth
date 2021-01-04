@@ -3,7 +3,7 @@ aiohttp_cookauth
 .. image:: https://img.shields.io/pypi/v/aiohttp-cookauth.svg
     :target: https://pypi.python.org/pypi/aiohttp-cookauth
 
-The library is a fork of `aiohttp_session`__ and `aiohttp_security`__. The fork provides identity and authorization for `aiohttp.web`__ only via cookies using redis storage. `Added the ability to forget all user sessions`.
+The library is a fork of `aiohttp_session`__ and `aiohttp_security`__. The fork provides identity and authorization for `aiohttp.web`__ only via cookies using redis storage.
 
 .. _aiohttp_web: http://aiohttp.readthedocs.org/en/latest/web.html
 
@@ -16,6 +16,13 @@ __ aiohttp_session_
 .. _aiohttp_security: https://github.com/aio-libs/aiohttp-security
 
 __ aiohttp_session_
+
+
+Features
+____________
+
+ - added the ability to forget all user sessions using forget_all function
+ - check_permission function return userid now
 
 Installation
 ------------
