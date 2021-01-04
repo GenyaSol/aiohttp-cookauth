@@ -53,9 +53,9 @@ Setup
 
 
  app = web.Application()
- redis = await create_redis_pool(('redis', 6379))
+ redis = await create_redis_pool(('localhost', 6379))
  storage = RedisStorage(redis, cookie_name='MY_SESSION', max_age=900)
- setup_cookauth(app, SimpleAuthorizationPolicy(app), storage)
+ setup_cookauth(app, SimpleAuthorizationPolicy(), storage)
 
 Documentation
 -------------
